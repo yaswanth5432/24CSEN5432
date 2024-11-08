@@ -1,20 +1,18 @@
-// program to reverse a +ve integer number
-
+// reverse a +ve integer number
 #include <stdio.h>
 
 int main() {
-   int a,b,sum=0;
-   printf("enter any number to be reversed: ");
+   int a,b,s=0;
+   printf("enter a number: ");
    scanf("%d",&a);
-   
    
    while(a>=1){
        b=a%10;
        a=a/10;
-       sum=sum*10+b;
+       s=s*10+b;
    }
    
-   a=sum;
+   a=s;
    printf("\n\nafter reversing: %d",a);
 
    
